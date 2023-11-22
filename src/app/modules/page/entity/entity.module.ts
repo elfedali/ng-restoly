@@ -1,17 +1,13 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { SharedModule } from "src/app/shared/shared.module";
 
-import { EntityRoutingModule } from './entity-routing.module';
-import { EntityComponent } from './entity.component';
+import { CommonModule } from "@angular/common";
+import { NgModule } from "@angular/core";
 
+import { EntityRoutingModule } from "./entity-routing.module";
+import { EntityComponent } from "./entity.component";
 
 @NgModule({
-  declarations: [
-    EntityComponent
-  ],
-  imports: [
-    CommonModule,
-    EntityRoutingModule
-  ]
+  declarations: [EntityComponent],
+  imports: [CommonModule, EntityRoutingModule, SharedModule],
 })
-export class EntityModule { }
+export class EntityModule {}

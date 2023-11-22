@@ -1,4 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
-
+$font-size-base: 0.875rem;
+$dark: #000;
+$border-width: 1px;
+$input-btn-focus-box-shadow: none;
 /* Importing Bootstrap SCSS file. */
-@import 'bootstrap/scss/bootstrap';
+@import "bootstrap/scss/bootstrap";
+@import "~@fortawesome/fontawesome-free/css/all.css";
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+.text-sm {
+    // 12 px
+    font-size: 0.75rem;
+}

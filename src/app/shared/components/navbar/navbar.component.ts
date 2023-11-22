@@ -3,7 +3,7 @@ import { Component } from "@angular/core";
 @Component({
   selector: "app-navbar",
   template: `
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-3">
       <div class="container-fluid">
         <a class="navbar-brand" [routerLink]="'/'">{{ title }}</a>
 
